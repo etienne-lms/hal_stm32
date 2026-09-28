@@ -24,10 +24,11 @@
 extern "C" {
 #endif
 
-#include "stm32_soc_hal.h"
 #include "stm32_hal_aes_types.h"
 #include "stm32_hal_core_config.h"
 #include "stm32_hal_types.h"
+#include "stm32_soc_hal.h"
+
 #include <stdbool.h>
 
 /*
@@ -39,7 +40,7 @@ extern "C" {
 #elif defined(STM32L4) || defined(STM32L1) || defined(STM32L0)
 #define STM32_AES_HAL_V1_L4
 #else
-#define STM32_HASH_HAL_V1
+#define STM32_AES_HAL_V1
 #endif
 
 #if defined(STM32_HASH_HAL_V1)
